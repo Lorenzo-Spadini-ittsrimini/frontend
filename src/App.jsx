@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import Layout from "@/components/Layout.jsx" 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Layout></Layout>
+      <Layout>
+        
+      </Layout>
     </>
   )
 }
