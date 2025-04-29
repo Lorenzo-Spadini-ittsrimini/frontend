@@ -4,7 +4,8 @@ const Login = () => {
   return (
     <div class="flex items-center justify-center min-h-screen bg-gray-100">
       <div class="relative max-w-lg w-full mx-auto p-10 bg-gray-50 shadow-lg rounded-2xl space-y-8">
-        <h1 class="text-3xl font-semibold text-center text-black">Registrati</h1>
+      
+        <h1 class="text-3xl font-semibold text-center text-black">Login</h1>
 
         <div class="space-y-6">
       
@@ -33,9 +34,14 @@ const Login = () => {
     
         <div>
           <button type="submit" class="w-full bg-black text-white text-lg font-semibold py-3 px-6 rounded hover:bg-gray-800 transition-colors duration-200">
-            Registrati
+            Login
           </button>
         </div>
+        
+        <div class="space-y-6">
+        <a href="/login" class="text-blue-600 hover:underline text-lg font-semibold">Non hai un account?</a>
+        </div>
+
       </div>
     </div>
   )
