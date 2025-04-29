@@ -24,6 +24,7 @@ function App() {
             <Route path='/FogEpisodes' element={<FogEpisodes/>}/>
             <Route path='/PatientTerapies' element={<PatientTerapies/>}/>
             <Route path='/ClinicianDetails' element={<ClinicianDetails/>}/>
+            <Route path='/Login' element={<Login/>}/>
           </Route>
         ) : userType === 'clinician' ? (
           <Route path="/" element={<Layout />}>
