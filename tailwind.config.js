@@ -10,6 +10,7 @@ export default {
         background: "#F7F9FC",
         header: "#111827",
         sidebar: "#1E1E2F",
+        sidebarHover: "#4F46E5",
         primary: "#3B82F6",
         primaryDark: "#2563EB",
         textMain: "#1F2937",
@@ -20,7 +21,7 @@ export default {
         logoAccent: "#38BDF8"
       },
       fontFamily: {
-        sans: ['inter', 'sans-serif']
+        sans: ['segue-ui', 'sans-serif']
       }
     },
   },

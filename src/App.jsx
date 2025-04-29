@@ -1,8 +1,13 @@
 import { React, useState } from 'react'
-import  Layout  from "@/components/Layout.jsx" 
-import  PatientDashboard  from '@/components/PatientDashboard.jsx'
-import Login from '@/components/Login.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Login from './components/Login.jsx'
+import Layout from './components/layout.jsx'
+import  PatientDashboard  from './components/patient-components/PatientDashboard.jsx'
+import FogEpisodes from './components/patient-components/FogEpisodes'
+import AddFogEpisodes from './components/patient-components/AddFogEpisodes.jsx'
+import PatientTerapies from './components/patient-components/PatientTerapies'
+import ClinicianDetails from './components/patient-components/ClinicianDetails.jsx'
 
 
 function App() {
@@ -16,13 +21,16 @@ function App() {
         {userType === 'patient' ? (
           <Route path="/" element={<Layout />}>
             <Route path="/PatientDashboard" element={<PatientDashboard />} />
+            <Route path='/FogEpisodes' element={<FogEpisodes/>}/>
+            <Route path='/PatientTerapies' element={<PatientTerapies/>}/>
+            <Route path='/ClinicianDetails' element={<ClinicianDetails/>}/>
           </Route>
         ) : userType === 'clinician' ? (
           <Route path="/" element={<Layout />}>
             <Route path="/Dashboard" element={<Dashboard />} />
           </Route>
         ) : (
-          <Route path="/" element={<Login />} />
+          <Route path="/Login" element={<Login />} />
         )}
       </Routes>
     </BrowserRouter>
